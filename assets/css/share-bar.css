@@ -1,0 +1,59 @@
+.autoseo-share-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid #e5e7eb;
+  flex-wrap: wrap;
+}
+.autoseo-share-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.autoseo-share-btns {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.autoseo-share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: opacity .15s, transform .15s;
+  white-space: nowrap;
+  font-family: inherit;
+  background: linear-gradient(135deg, #1a3c1a, #2d5a27);
+  color: #fff;
+}
+.autoseo-share-btn:hover { opacity: .82; transform: translateY(-1px); color: #fff; }
+.autoseo-share-btn svg { flex-shrink: 0; display: block; }
+
+.autoseo-share-copy {
+  background: #f3f4f6;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+}
+.autoseo-share-copy:hover { background: #e5e7eb; color: #374151; opacity: 1; }
+.autoseo-share-copy.autoseo-copied { background: #d1fae5; color: #065f46; border-color: #6ee7b7; }
+
+@media (max-width: 640px) {
+  .autoseo-share-btn span { display: none; }
+  .autoseo-share-btn { width: 36px; padding: 0; justify-content: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .autoseo-share-btn { transition: none; }
+}
